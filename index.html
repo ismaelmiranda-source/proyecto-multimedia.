@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeliPan - Pastelería y Panadería</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="top-bar">
+      <a href="index.html" class="logo-box">
+        <img src="https://i.ibb.co/FbGsXcHW/1789002862782.jpg" alt="DeliPan" class="logo-img">
+    </a>
+      <div class="search-box" id="searchBox">
+
+        <button
+            type="button"
+            class="search-toggle"
+            id="searchToggle"
+            aria-label="Abrir buscador"
+            title="Buscar productos">
+    
+            <i class="fa-solid fa-magnifying-glass"></i>
+    
+        </button>
+    
+        <form class="search-form" id="searchForm">
+    
+            <div class="search-input-wrapper">
+    
+                <i class="fa-solid fa-magnifying-glass search-input-icon"></i>
+    
+                <input
+                    type="search"
+                    id="siteSearch"
+                    placeholder="Buscar productos ..."
+                    autocomplete="off"
+                    aria-label="Buscar productos">
+    
+                <button
+                    type="button"
+                    class="search-close"
+                    id="searchClose"
+                    aria-label="Cerrar buscador">
+    
+                    <i class="fa-solid fa-xmark"></i>
+    
+                </button>
+    
+            </div>
+    
+        </form>
+    
+    </div>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-item active"><i class="fa-solid fa-house"></i> INICIO</a>
+        <a href="nuestro-pan.html" class="nav-item"><i class="fa-solid fa-bread-slice"></i> NUESTRO PAN</a>
+        <a href="contactanos.html" class="nav-item"><i class="fa-solid fa-phone"></i> CONTACTANOS</a>
+        <a href="sobre-nosotros.html" class="nav-item"><i class="fa-solid fa-crown"></i> SOBRE NOSOTROS</a>
+      </nav>
+
+  <section class="hero-banner">
+    <h1>Productos de panadería y pastelería destacados</h1>
+    <p>La tradición de Colombia en cada una de nuestras creaciones.</p>
+  </section>
+
+  <section class="carousel-section">
+    <div class="carousel-container">
+      <div class="slides-wrapper">
+        
+        <div class="slide active">
+          <div class="slide-content">
+            <div class="text-content">
+              <h2>Rocones de Guayaba Artesanales</h2>
+              <p>Masa dulce tradicional con rellenos dulces de antaño.</p>
+            </div>
+            <div class="image-content">
+              <div class="image-card">
+                <img src="https://static.compreloadomicilio.com/hummpan/products/0132/104.jpg" alt="Rocones de Guayaba Artesanales">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="text-content">
+              <h2>Pandebonos Calientitos</h2>
+              <p>El balance perfecto entre suavidad y el auténtico sabor a queso recién horneado para tus mañanas.</p>
+            </div>
+            <div class="image-content">
+              <div class="image-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7KxLuaQcEYPxOuRkSNyU78EjM5kezpEHt_BQDsWUr3g&s=10" alt="Pandebonos">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="text-content">
+              <h2>Pan de Queso y Miel</h2>
+              <p>Combina pan fresco, queso cremoso y un chorrito de miel dorada.</p>
+            </div>
+            <div class="image-content">
+              <div class="image-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAoaL-i7gyoXhqST5OHfw-za4F38x8eyZibogKD-tfMaHieqn0NEYBigPy&s=10" alt="Pan de queso y miel">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="text-content">
+              <h2>Torta Especial </h2>
+              <p>Torta de vainilla rellena con crema de la casa, bañada en amaretto, para tus mejores momentos.</p>
+            </div>
+            <div class="image-content">
+              <div class="image-card">
+                <img src="https://i.ibb.co/xqQNwvbs/santaelenafoto-0004-copia-300x300-png.jpg" alt="Torta Especial">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+
+      <div class="dots-container">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-col">
+      <h3>Puntos de Ventas:</h3>
+      <p>Centro Comercial Jardín Plaza / Local LN 06 (NUEVO)</p>
+      <p>Centro Comercial Unicentro / Local 102</p>
+    </div>
+
+    <div class="footer-col center-col">
+      <h2 class="footer-brand">delipan</h2>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send/?phone=573103739452&text=Hola+DeliPan%2C+estoy+interesado+en+Torta+de+Zanahoria+sin+az%C3%BAcar+adicionada.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Eventos:</h3>
+      <p>Las mesas de postres de la Pastelería DeliPan son únicas, originales y excepcionales, ofrecemos un amplio catálogo de miniaturas y tortas especiales para decorar sus eventos.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
