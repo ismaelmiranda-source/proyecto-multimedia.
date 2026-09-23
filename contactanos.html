@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos - DeliPan</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="top-bar">
+      <a href="index.html" class="logo-box">
+        <img src="https://i.ibb.co/FbGsXcHW/1789002862782.jpg" alt="DeliPan" class="logo-img">
+    </a>
+      <div class="search-box" id="searchBox">
+
+        <button
+            type="button"
+            class="search-toggle"
+            id="searchToggle"
+            aria-label="Abrir buscador"
+            title="Buscar productos">
+    
+            <i class="fa-solid fa-magnifying-glass"></i>
+    
+        </button>
+    
+        <form class="search-form" id="searchForm">
+    
+            <div class="search-input-wrapper">
+    
+                <i class="fa-solid fa-magnifying-glass search-input-icon"></i>
+    
+                <input
+                    type="search"
+                    id="siteSearch"
+                    placeholder="Buscar productos ..."
+                    autocomplete="off"
+                    aria-label="Buscar productos">
+    
+                <button
+                    type="button"
+                    class="search-close"
+                    id="searchClose"
+                    aria-label="Cerrar buscador">
+    
+                    <i class="fa-solid fa-xmark"></i>
+    
+                </button>
+    
+            </div>
+    
+        </form>
+    
+    </div>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i> INICIO</a>
+        <a href="nuestro-pan.html" class="nav-item"><i class="fa-solid fa-bread-slice"></i> NUESTRO PAN</a>
+        <a href="contactanos.html" class="nav-item active"><i class="fa-solid fa-phone"></i> CONTACTANOS</a>
+        <a href="sobre-nosotros.html" class="nav-item"><i class="fa-solid fa-crown"></i> SOBRE NOSOTROS</a>
+      </nav>
+
+  <main class="contact-page-container">
+    <div class="contact-wrapper">
+      
+      <div class="contact-form-col">
+        <h2>Tu mensaje es la receta que falta, ¡escríbenos!</h2>
+        
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Tu Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Tu Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="whatsapp">Tu WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp">
+            </div>
+            <div class="form-group">
+              <label for="asunto">Tu Asunto</label>
+              <input type="text" id="asunto" name="asunto">
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="mensaje">Tu Mensaje (opcional)</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </div>
+
+      <div class="contact-info-col">
+        <h2>Contáctanos</h2>
+        
+        <ul class="info-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Calle 110 # 6Q-522 Centro Comercial Unicentro, Cali.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>(+57) 310 3739452</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>ventas@delipan.com</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-col">
+      <h3>Puntos de Ventas:</h3>
+      <p>Centro Comercial Jardín Plaza / Local LN 06 (NUEVO)</p>
+      <p>Centro Comercial Unicentro / Local 102</p>
+    </div>
+
+    <div class="footer-col center-col">
+      <h2 class="footer-brand">delipan</h2>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send/?phone=573103739452&text=Hola+DeliPan%2C+estoy+interesado+en+Torta+de+Zanahoria+sin+az%C3%BAcar+adicionada.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Eventos:</h3>
+      <p>Las mesas de postres de la Pastelería DeliPan son únicas, originales y excepcionales, ofrecemos un amplio catálogo de miniaturas y tortas especiales para decorar sus eventos.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
